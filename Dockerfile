@@ -1,7 +1,5 @@
 FROM fedora:36
 
-RUN echo $(date)
-
 RUN dnf update -y
 
 RUN dnf install npm make ncurses unzip -y
