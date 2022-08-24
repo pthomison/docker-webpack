@@ -3,6 +3,9 @@ IMAGE_NAME="pthomison/webpack"
 build:
 	docker build . -t $(IMAGE_NAME):localbuild
 
+build-no-cache:
+	docker build . --no-cache -t $(IMAGE_NAME):localbuild
+
 shell: build
 	$(RUN_CONTAINER) /bin/zsh
 
