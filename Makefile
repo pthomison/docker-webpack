@@ -1,5 +1,7 @@
 IMAGE_NAME="pthomison/webpack"
 
+# maintaince comment
+
 build:
 	docker build . -t $(IMAGE_NAME):localbuild
 
